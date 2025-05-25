@@ -39,7 +39,7 @@ module.exports = {
       name: "product",
       filename: "remoteEntry.js",
       exposes: {
-        './ProductList': './src/components/ProductList.tsx'
+        "./ProductList": "./src/ProductList",
       },
       shared: {
         react: {
@@ -49,7 +49,19 @@ module.exports = {
         "react-dom": {
           singleton: true,
           eager: true,
-        }
+        },
+        "react-redux": {
+          singleton: true,
+          requiredVersion: false,
+        },
+        "@reduxjs/toolkit": {
+          singleton: true,
+          requiredVersion: false,
+        },
+        "@amazon-mfe/shared-store": {
+          singleton: true,
+          eager: true,
+        },
       },
     }),
     new HtmlWebpackPlugin({

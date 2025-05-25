@@ -49,7 +49,15 @@ module.exports = {
         "react-dom": {
           singleton: true,
           eager: true,
-        }
+        },
+        "@reduxjs/toolkit": {
+          singleton: true,
+          eager: true,
+        },
+        "@amazon-mfe/shared-store": {
+          singleton: true,
+          eager: true,
+        },
       },
     }),
     new HtmlWebpackPlugin({

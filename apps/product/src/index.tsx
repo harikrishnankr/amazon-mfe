@@ -1,1 +1,1 @@
-import('./components/ProductList');
+import('./ProductList');
